@@ -1,0 +1,93 @@
+/* Container for forms */
+.container {
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: auto;
+    background-color: #f0f9ff; /* Light sky blue background */
+    border-radius: 12px; /* More pronounced rounded corners */
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Light blue shadow for depth */
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+/* Form label styling */
+.form-label {
+    font-weight: bold;
+    color: #007bff; /* Primary blue color */
+}
+
+.form-group{
+    padding: 10px;
+}
+
+/* Hover effect for container */
+.container:hover {
+    background-color: #d1ecf1; /* Light cyan background on hover */
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3); /* Stronger shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Allow the container to take up more space on smaller screens */
+        padding: 1rem;
+        background-color: #e0f7fa; /* Slightly lighter blue for tablets */
+    }
+
+    .form-label {
+        font-size: 1rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; /* Full width for very small screens */
+        padding: 0.8rem;
+        background-color: #ccf2f4; /* Even lighter background for very small screens */
+    }
+
+    .form-label {
+        font-size: 0.9rem; /* Further reduce label size on small screens */
+        color: #0056b3; /* Darker blue for better contrast */
+    }
+
+    /* Make form inputs and buttons more touch-friendly on small screens */
+    .form-control {
+        font-size: 1rem; /* Ensure inputs are easily readable */
+        padding: 0.75rem; /* Increase padding for better usability */
+        border: 1px solid #b2ebf2; /* Add a light blue border */
+    }
+
+    button {
+        font-size: 1rem; /* Increase button size */
+        padding: 0.8rem 1.2rem; /* Make button more touch-friendly */
+        background-color: #007bff; /* Primary color */
+        color: #ffffff; /* White text */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+}
+
+/* General button styling */
+.btn{
+    background-color: #17b82587;; /* Teal color */
+    color: #ffffff; /* White text */
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 50px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e2e059; /* Darker teal */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
